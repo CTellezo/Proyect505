@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  let N = parseInt(prompt("Ingresa el primer numero:"))
+let Primo = true;
+
+for(let i = 2; i < N; i++){
+if (N % i === 0) {
+    Primo = false;
+    break;
+}
+}
+let R = Primo ? "Pertenece a los numeros primos." : "El numero pertenece a los primos";
+document.write(R);
+
+
+
+
+    </script>
+
+
+</body>
+</html>

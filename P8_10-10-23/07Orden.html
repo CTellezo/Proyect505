@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let V1 = parseInt(prompt("Ingresa el 1er numero:"))
+        let V2 = parseInt(prompt("Ingresa el 2do numero :"))
+        let V3 = parseInt(prompt("Ingresa el 3er numero:"))
+   let VO = [V1,V2,V3];
+   VO.sort(function(a,b){
+return a - b;
+   });
+   document.write("Se ordenaron los numeros de menor a mayor: " +VO.join(","))
+
+
+    </script>
+</body>
+</html>

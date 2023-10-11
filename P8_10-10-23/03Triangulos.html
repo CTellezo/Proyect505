@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let L1 = parseFloat(prompt("Ingresa el primer numero:"))
+let L2 = parseFloat(prompt("Ingresa el segundo numero:"))
+let L3 = parseFloat(prompt("Ingresa el tercer numero:"))
+
+if (L1 === L2 && L2 === L3) {
+    document.write("Segun los valores asignados es un triangulo equilatero")
+}else if (L1 === L2 || L1 === L3 || L2 ===L3) {
+    document.write("Segun los valores asignados es un triangulo isosceles")
+} else if (L1 ** 2 + L2 ** 2 === L3 **2 || L1 ** 2 + L3 ** 2 === L2 ** 2 || L2 ** 2 +L3 **2 === L1 ** 2) {
+    document.write("Segun los valores asignados es un triangulo rectangulo")
+} else{
+    document.write("Segun los valores asignados es un triangulo escaleno")
+}
+
+</script>
+</body>
+</html>

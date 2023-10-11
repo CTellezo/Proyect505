@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt("Ingresa la coordenada x en el punto:"))
+        let y = parseInt(prompt("Ingresa la coordenada y en el punto :"))
+        let CT;
+
+        if (x > 0 && y > 0) {
+            CT = "El punto se encuentra en el 1er cuadrante"
+        } else if (x < 0 && y > 0) {
+            CT = "El punto se encuentra en el 2do cuadrante"
+        } else if (x < 0 && y < 0) {
+            CT = "El punto se encuentra en el 3er cuadrante"
+        }else if (x > 0 && y > 0) {
+            CT = "El punto se encuentra en el 4to cuadrante"
+        }else{
+            CT = "ERROR: Los valores que ingresaste no tienen cuadrante se encuentra en un eje."
+        }
+
+document.write(CT);
+    </script>
+</body>
+</html>
