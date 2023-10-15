@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Mostrar() {
+            let V1 = parseInt(prompt("Ingresa el primer numero:"))
+        let V2 = parseInt(prompt("Ingresa el segundo numero:"))
+        Deter(V1,V2);
+        }
+       
+        function Deter(N1,N2) {
+            if (N1 > N2) {
+            document.write(N1 + " Es mayor que " + N2)
+        } else  if (N2 > N1) {
+            document.write(N2 + " El numero es mayor que" + N1)
+        } else{
+            document.write("Ambos numeros son iguales.")
+        }  
+        }
+       Mostrar();
+        
+        
+            </script>
+</body>
+</html>

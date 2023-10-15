@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Mostrar() {
+            let La1 = parseFloat(prompt("Ingresa el primer numero:"))
+            let La2 = parseFloat(prompt("Ingresa el segundo numero:"))
+            let La3 = parseFloat(prompt("Ingresa el tercer numero:"))
+            Deter(La1,La2,La3)
+        }
+                function Deter(L1,L2,L3) {
+                    if (L1 === L2 && L2 === L3) {
+    document.write("Segun los valores asignados es un triangulo equilatero")}
+
+           else if (L1 === L2 || L2 === L3 || L1 ===L3) {
+    document.write("Segun los valores asignados es un triangulo isosceles")}
+ 
+           else if (Math.pow(L1, 2) === Math.pow(L2, 2) + Math.pow(L3, 2 ) ||
+                    Math.pow(L2, 2) === Math.pow(L1, 2) + Math.pow(L3, 2 ) ||
+                    Math.pow(L3, 2) === Math.pow(L1, 2) + Math.pow(L2, 2 )) {
+           document.write("Segun los valores asignados es un triangulo rectangulo")}
+                            else{
+    document.write("Segun los valores asignados es un triangulo escaleno")}
+
+                }
+                    Mostrar();
+
+
+</script>
+</body>
+</html>

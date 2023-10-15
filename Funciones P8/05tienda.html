@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Mostrar() {
+            let Nombre = prompt("Ingresa el NOMBRE:")
+        let Cantidad = parseInt(prompt("Ingresa la cantidad :"))
+         Calcular(Nombre, Cantidad)
+        }
+   
+            function Calcular(CA,NC) {
+                let MP;
+        if (CA < 5) {
+            MP = " Pagar en efectivo.";
+        } else if (CA >= 5 && CA < 12) {
+            MP = " Pagar con tarjeta"
+        }else{
+           MP = " Pagara con cheque." ;
+        }
+document.write(NC + ""  + MP)
+            }
+        Mostrar();
+       
+
+
+    </script>
+</body>
+</html>

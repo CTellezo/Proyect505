@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Mostrar() {
+            let Nombre = prompt("Ingresa tu nombre:")
+        let Cantidad = parseInt(prompt("Ingresa la cantidad :"))
+                    Calcular(Nombre,Cantidad)
+        }
+        
+        function Calcular(NC, CANTL) {
+            let Pu;
+        if (CANTL < 12) {
+            Pu = 700;
+        } else{
+            Pu = 480;
+        }
+            let  TC = CANTL * Pu;
+            document.write("Usuario: " + NC + " Usted de un total de: $" + TC)
+
+        }
+      Mostrar();
+
+
+    </script>
+</body>
+</html>
